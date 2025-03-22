@@ -8,6 +8,10 @@ TagManager:
   - CinemachineTarget
   - ScreenCamera
   - cockpit_capitalLaser
+  - North
+  - South
+  - East
+  - West
   layers:
   - Default
   - TransparentFX

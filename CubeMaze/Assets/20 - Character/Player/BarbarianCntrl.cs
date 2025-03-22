@@ -17,14 +17,4 @@ public class BarbarianCntrl : MonoBehaviour
     {
         transform.Translate(transform.forward * speed * Time.deltaTime);    
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("On Trigger Enter");
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("On Collision Enter");
-    }
 }
