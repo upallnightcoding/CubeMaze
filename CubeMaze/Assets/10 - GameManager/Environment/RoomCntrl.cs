@@ -11,7 +11,7 @@ public class RoomCntrl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(RotateObject(point, axisX, 90.0f, 1.0f));
+        StartCoroutine(RotateObject(point, axisX, 90.0f, 3.0f));
     }
 
     // Update is called once per frame

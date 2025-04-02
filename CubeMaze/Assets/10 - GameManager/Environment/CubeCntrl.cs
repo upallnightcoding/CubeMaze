@@ -18,7 +18,7 @@ public class CubeCntrl : MonoBehaviour
 
     public void RotatePlatform(Vector3 point, Vector3 axis)
     {
-        StartCoroutine(RotateObject(point, axis, 90.0f, 1.0f));
+        StartCoroutine(RotateObject(point, axis, 90.0f, 3.0f));
     }
 
     private IEnumerator RotateObject(Vector3 point, Vector3 axis, float rotateAmount, float rotateTime)
