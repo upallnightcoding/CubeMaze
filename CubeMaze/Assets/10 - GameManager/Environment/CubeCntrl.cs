@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CubeCntrl : MonoBehaviour
 {
+    [SerializeField] private GameData gameData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,7 @@ public class CubeCntrl : MonoBehaviour
 
     public void RotatePlatform(Vector3 point, Vector3 axis)
     {
-        StartCoroutine(RotateObject(point, axis, 90.0f, 3.0f));
+        StartCoroutine(RotateObject(point, axis, 90.0f, gameData.cubeRotationSpeed));
     }
 
     private IEnumerator RotateObject(Vector3 point, Vector3 axis, float rotateAmount, float rotateTime)
