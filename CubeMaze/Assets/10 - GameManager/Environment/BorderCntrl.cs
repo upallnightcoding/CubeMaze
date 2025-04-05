@@ -7,6 +7,7 @@ public class BorderCntrl : MonoBehaviour
     [SerializeField] private CubeCntrl cubeCntrl;
     [SerializeField] private Transform pivotPoint;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,12 @@ public class BorderCntrl : MonoBehaviour
                 cubeCntrl.RotatePlatform(pivotPoint.position, transform.right);
                 break;
             case "South":
+                cubeCntrl.RotatePlatform(pivotPoint.position, transform.right);
+                break;
+            case "East":
+                cubeCntrl.RotatePlatform(pivotPoint.position, -transform.right);
+                break;
+            case "West":
                 cubeCntrl.RotatePlatform(pivotPoint.position, transform.right);
                 break;
         }
