@@ -27,16 +27,16 @@ public class BorderCntrl : MonoBehaviour
         switch(transform.tag)
         {
             case "North":
-                cubeCntrl.RotatePlatform(pivotPoint.position, transform.right);
+                cubeCntrl.RotatePlatform(pivotPoint.position, transform.right, transform.tag);
                 break;
             case "South":
-                cubeCntrl.RotatePlatform(pivotPoint.position, transform.right);
+                cubeCntrl.RotatePlatform(pivotPoint.position, transform.right, transform.tag);
                 break;
             case "East":
-                cubeCntrl.RotatePlatform(pivotPoint.position, -transform.right);
+                cubeCntrl.RotatePlatform(pivotPoint.position, -transform.right, transform.tag);
                 break;
             case "West":
-                cubeCntrl.RotatePlatform(pivotPoint.position, transform.right);
+                cubeCntrl.RotatePlatform(pivotPoint.position, transform.right, transform.tag);
                 break;
         }
     }

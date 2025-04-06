@@ -16,26 +16,5 @@ public class BoarderCntrl : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log($"Boarder OnTriggerEnter ... {transform.tag}");
-
-        switch(transform.tag)
-        {
-            case "North":
-                cubeCntrl.RotatePlatform(pivotPoint.position, posAxisX);
-                break;
-            case "South":
-                cubeCntrl.RotatePlatform(pivotPoint.position, negAxisX);
-                break;
-        }
-
-        
-    }
+    
 }

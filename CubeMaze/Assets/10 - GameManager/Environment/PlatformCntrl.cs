@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class PlatformCntrl : MonoBehaviour
 {
-    [SerializeField] private GameObject[] borderCntrls;
+    [SerializeField] private GameObject borders;
+    [SerializeField] private int id;
+
+    public void ShowBorders(bool onOffSwitch) => borders.SetActive(onOffSwitch);
+
+    public float GetHeight() => transform.position.y;
+
+    public int GetId() => id;
 
     // Start is called before the first frame update
     void Start()
     {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SetBoarders(bool value)
-    {
-        foreach(GameObject border in borderCntrls)
-        {
-            border.SetActive(value);
-        }
     }
 }
