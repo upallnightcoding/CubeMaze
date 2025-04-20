@@ -270,9 +270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 2
-  xSize: 10
-  ySize: 10
-  zSize: 10
+  xSize: 5
+  ySize: 5
+  zSize: 5
 --- !u!4 &814137017
 Transform:
   m_ObjectHideFlags: 0
