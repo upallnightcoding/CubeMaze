@@ -528,7 +528,7 @@ public class FpCntrl : MonoBehaviour
     }
 }
 
-
+/*
 
 // Custom Editor
 #if UNITY_EDITOR
@@ -740,3 +740,4 @@ public class FpCntrl : MonoBehaviour
 }
 
 #endif
+*/
