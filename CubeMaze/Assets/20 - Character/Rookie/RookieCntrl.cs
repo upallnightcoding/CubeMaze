@@ -12,6 +12,8 @@ namespace Ip
         [SerializeField] private float upperLimit = -40.0f;
         [SerializeField] private float buttomLimit = 70.0f;
         [SerializeField] private float mouseSensitivity = 21.9f;
+        [SerializeField] private float walkSpeed = 1.0f;
+        [SerializeField] private float runSpeed = 3.0f;
 
         private Rigidbody rigidBody;
         private InputCntrl inputCntrl;
@@ -19,9 +21,6 @@ namespace Ip
 
         private int xVelocity;
         private int yVelocity;
-
-        private float walkSpeed = 0.5f;
-        private float runSpeed = 1.0f;
 
         private Vector2 currentVelocity;
 
@@ -54,8 +53,7 @@ namespace Ip
             float targetSpeed = inputCntrl.Run ? runSpeed : walkSpeed;
             if (inputCntrl.Move == Vector2.zero) targetSpeed = 0.1f;
 
-            //currentVelocity.x = targetSpeed * inputCntrl.Move.x;
-            //currentVelocity.y = targetSpeed * inputCntrl.Move.y;
+            Debug.Log($"Target Speed: {targetSpeed}");
 
             currentVelocity.x = Mathf.Lerp(currentVelocity.x, inputCntrl.Move.x * targetSpeed, animationBlendSpeed * Time.fixedDeltaTime);
             currentVelocity.y = Mathf.Lerp(currentVelocity.y, inputCntrl.Move.y * targetSpeed, animationBlendSpeed * Time.fixedDeltaTime);
